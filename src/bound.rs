@@ -49,7 +49,7 @@ pub fn with_where_predicates_from_fields(
     let predicates = cont
         .data
         .all_fields()
-        .filter_map(|field| from_field(&field.attrs))
+        .flat_map(|field| from_field(&field.attrs))
         .flat_map(|predicates| predicates.to_vec());
 
     let mut generics = generics.clone();
@@ -71,7 +71,7 @@ pub fn with_where_predicates_from_variants(
 
     let predicates = variants
         .iter()
-        .filter_map(|variant| from_variant(&variant.attrs))
+        .flat_map(|variant| from_variant(&variant.attrs))
         .flat_map(|predicates| predicates.to_vec());
 
     let mut generics = generics.clone();
