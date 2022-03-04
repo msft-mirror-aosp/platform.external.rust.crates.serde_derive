@@ -41,7 +41,7 @@ rust_proc_macro {
     name: "libserde_derive",
     crate_name: "serde_derive",
     cargo_env_compat: true,
-    cargo_pkg_version: "1.0.130",
+    cargo_pkg_version: "1.0.136",
     srcs: ["src/lib.rs"],
     edition: "2015",
     features: ["default"],
