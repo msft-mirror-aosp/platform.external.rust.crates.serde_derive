@@ -54,4 +54,30 @@ rust_proc_macro {
         "libquote",
         "libsyn",
     ],
+    compile_multilib: "first",
+}
+
+rust_test_host {
+    name: "serde_derive_test_src_lib",
+    crate_name: "serde_derive",
+    cargo_env_compat: true,
+    cargo_pkg_version: "1.0.136",
+    srcs: ["src/lib.rs"],
+    test_suites: ["general-tests"],
+    auto_gen_config: true,
+    test_options: {
+        unit_test: true,
+    },
+    edition: "2015",
+    features: ["default"],
+    cfgs: [
+        "ptr_addr_of",
+        "underscore_consts",
+    ],
+    rustlibs: [
+        "libproc_macro2",
+        "libquote",
+        "libserde",
+        "libsyn",
+    ],
 }
