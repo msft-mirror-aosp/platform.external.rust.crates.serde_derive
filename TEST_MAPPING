@@ -82,9 +82,6 @@
       "name": "legacykeystore_test"
     },
     {
-      "name": "libcert_request_validator_tests"
-    },
-    {
       "name": "libkmr_common_test"
     },
     {
@@ -127,9 +124,6 @@
     },
     {
       "name": "legacykeystore_test"
-    },
-    {
-      "name": "libcert_request_validator_tests"
     },
     {
       "name": "libkmr_common_test"
