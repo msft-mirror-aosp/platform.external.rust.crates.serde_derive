@@ -17,6 +17,6 @@ MODULE_RUSTFLAGS += \
 MODULE_LIBRARY_DEPS := \
 	external/rust/crates/proc-macro2 \
 	external/rust/crates/quote \
-	external/rust/crates/syn \
+	external/rust/crates/syn/1.0.107 \
 
 include make/library.mk
