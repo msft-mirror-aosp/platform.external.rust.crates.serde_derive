@@ -51,8 +51,6 @@ rust_proc_macro {
         "libsyn",
     ],
     compile_multilib: "first",
-    product_available: true,
-    vendor_available: true,
 }
 
 rust_test_host {
