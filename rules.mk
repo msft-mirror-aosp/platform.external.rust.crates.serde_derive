@@ -11,12 +11,10 @@ MODULE_SRCS := \
 MODULE_RUST_EDITION := 2015
 MODULE_RUSTFLAGS += \
 	--cfg 'feature="default"' \
-	--cfg 'ptr_addr_of' \
-	--cfg 'underscore_consts' \
 
 MODULE_LIBRARY_DEPS := \
 	external/rust/crates/proc-macro2 \
 	external/rust/crates/quote \
-	external/rust/crates/syn/1.0.107 \
+	external/rust/crates/syn \
 
 include make/library.mk
