@@ -57,6 +57,7 @@ rust_proc_macro {
 
 rust_test_host {
     name: "serde_derive_test_src_lib",
+    host_cross_supported: false,
     crate_name: "serde_derive",
     cargo_env_compat: true,
     cargo_pkg_version: "1.0.158",
